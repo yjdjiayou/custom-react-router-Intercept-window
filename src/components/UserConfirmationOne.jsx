@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {Modal} from 'antd';
 
 const container = document.createElement('div');
-const UserConfirmation = (payload, callback) => {
+const UserConfirmationOne = (payload, callback) => {
     const {action, location, curHref, message} = JSON.parse(payload);
 
     /**
@@ -33,4 +33,4 @@ const UserConfirmation = (payload, callback) => {
         container,
     );
 };
-export default UserConfirmation;
+export default UserConfirmationOne;

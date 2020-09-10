@@ -3,15 +3,15 @@ import React from 'react';
 import {BrowserRouter, Switch,Route,Redirect} from 'react-router-dom';
 import Home from './views/Home';
 import My from './views/My';
-import UserConfirmation from "./components/UserConfirmation";
+// import UserConfirmationOne from "./components/UserConfirmationOne";
 
 function App() {
     return (
         <div className="App">
             <BrowserRouter
-                getUserConfirmation={(message, callback) => {
-                  UserConfirmation(message, callback);
-                }}
+                // getUserConfirmation={(message, callback) => {
+                //   UserConfirmationOne(message, callback);
+                // }}
             >
                 <Switch>
                     <Route  path={'/home'}  exact component={Home}/>
